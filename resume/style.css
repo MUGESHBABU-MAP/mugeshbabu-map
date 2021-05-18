@@ -203,7 +203,7 @@ span{
     }
     .navbar ul li:last-child{
         display: inline;
-        float: left;
+        float: right;
     }
     
 }
