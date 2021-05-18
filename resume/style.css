@@ -64,7 +64,7 @@ body{
 
 /* unvisited link */
 a:link {
-color: rgb(255, 0, 0);
+color: greenyellow;
 }
 
 /* visited link */
@@ -199,7 +199,7 @@ span{
     .navbar ul li{
         display: inline;
         float: left;
-        min-width: 16%;
+        min-width: 10%;
     }
     .navbar ul li:last-child{
         display: inline;
