@@ -1,11 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Aadupuliyattam</title>
+    <title>Tigers and Goats</title>
     <style>
-        button:hover {
-  transform: scale(1.5);}
         .Goat {
             width: 40px;
             height: 40px;
@@ -32,37 +30,33 @@
 <body>
 <div align="center">
     <table>
-        <tr style="color: blue;background-color: transparent;border: none;font-size: 20px;font-weight: bold;">
+        <tr>
             <th align="left" style="padding-left:20px">
-                <h1 style="padding-left:80px">Aadupuliyattam</h1>
+                <h1 style="padding-left:80px">Tigers and Goats</h1>
             </th>
             <th align="left">
 
             </th>
         </tr>
 
-        <table style="color: springgreen;background-color: transparent;border: none;font-size: 20px;font-weight: bold;">
+        <table style="font-weight: bold;">
             <tr>
                 <td>
-                    <tr>
-                   <p style="display: none;"> Game Type:</p>
-                   </tr>
-                   <tr>  <td><select id="ComputerSide" onchange="changeGameType(this)" style="color: aqua;background-color: transparent;border: none;font-size: 20px;font-weight: bold;">
+                    Game Type:  <td><select id="ComputerSide" onchange="changeGameType(this)">
                 <optgroup label="Computer plays as:">
-                    <option value="tigers">Computer : puli</option>
-                    <option value="goats">Computer : aadu</option>
+                    <option value="tigers">Computer plays as tigers</option>
+                    <option value="goats">Computer plays as goats</option>
                     <option value="computer">Computer vs Computer</option>
                 </optgroup>
             </select>
             </td>
-            </tr>
                 </td>
 
             </tr>
             <tr>
                 <td style="width:300px;font-weight: bold;">
-                    <h3>Puli</h3>
-                    <p style="display: none;">Algorithm: </p> <select id="TigersAlgorithm" style="color: violet;background-color: transparent;border: none;font-size: 20px;font-weight: bold;">
+                    <h3>Tigers</h3>
+                    Algorithm:  <select id="TigersAlgorithm">
                     <optgroup label="Choose a search algorithm ...">
                         <option value="expectimax">Expectimax</option>
                         <option value="minimax">Minimax</option>
@@ -73,16 +67,14 @@
                         <option value="mtdfagent">MTD(f)</option>
                     </optgroup>
                 </select>
-                <code style="display: none;">
                     <br /><br />
                     Depth Limit: <br/> <input type="range" min="1" max="20" id="TigersDepth" value="20" /><br />
                     Time Limit (seconds): <br /><input type="range" min="2" max="60" id="TigersTime" value="2" /><br />
                     Current Progress: <progress id="TigersCurrentProgress" max="100"></progress>
-                </code>
                 </td>
                 <td style="width:300px;font-weight: bold;">
-                    <h3>Aadu</h3>
-                    <p style="display: none;">Algorithm: </p> <select id="GoatsAlgorithm" disabled style="color: violet;background-color: transparent;border: none;font-size: 20px;font-weight: bold;">
+                    <h3>Goats</h3>
+                    Algorithm:  <select id="GoatsAlgorithm" disabled>
                     <optgroup label="Choose a search algorithm ...">
                         <option value="expectimax">Expectimax</option>
                         <option value="minimax">Minimax</option>
@@ -92,12 +84,10 @@
                         <option value="scoutwithttagent">Scout With Memory</option>
                         <option value="mtdfagent">MTD(f)</option>
                     </optgroup>
-                </select>
-                <code style="display: none;">
+                </select><br /><br />
                     Depth Limit: <br /><input disabled type="range" min="1" max="20" id="GoatsDepth" value="20" /><br />
                     Time Limit (seconds): <br /><input disabled type="range" min="2" max="60" id="GoatsTime" value="2" /><br />
                     Current Progress: <progress id="GoatsCurrentProgress" max="100"></progress>
-                <code style="display: none;">
                 </td>
             </tr>
             <tr>
@@ -105,18 +95,18 @@
             </tr>
             <tr>
                 <td>
-                    <button onclick="startGame()" id="StartButton" type="button" style="color: green;background-color: transparent;border: none;font-size: 20px;font-weight: bold;">Start</button>
+                    <button onclick="startGame()" id="StartButton" type="button">Start</button>
                 </td>
                 <td>
-                    <button onclick="resetGame()" id="ResetButton" type="reset" style="color: red;background-color: transparent;border: none;font-size: 20px;font-weight: bold;">Stop</button>
+                    <button onclick="resetGame()" id="ResetButton" type="reset">Reset</button>
                 </td>
             </tr>
             <tr>
-                <td style="color: blue;background-color: transparent;border: none;font-size: 20px;font-weight: bold;">
+                <td>
                     <p><span id="SideToMove">Tiger</span>' turn:</p>
                 </td>
                 <td>
-                    <p style="color: indigo;background-color: transparent;border: none;font-size: 20px;font-weight: bold;"><span id="Status"></span></p>
+                    <p><span id="Status"></span></p>
                 </td>
             </tr>
         </table>
