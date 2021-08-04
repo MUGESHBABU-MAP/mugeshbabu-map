@@ -1,5 +1,5 @@
 var start = 0;
-var root = "https://mugeshbabu-map.github.io/mugeshbabu-map/ancientgames";
+var root = location.protocol + '//' + location.host+'/mugeshbabu-map/ancientgames';
 
 function startGame(){
     var button_color = document.getElementById("button_start_stop");
