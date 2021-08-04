@@ -1,0 +1,87 @@
+body{
+    /*background-color: rgb(100, 97, 92);*/
+    background-image: linear-gradient(to bottom, red,orange,yellow,green,blue,indigo,violet);
+}
+
+/*
+check
+*/
+.green03{
+    /*background-color: gray;*/
+    width: auto;
+    height: auto;
+}
+.red03:hover, .green03 :hover, .Empty :hover, .bg_class :hover {
+        background-color: gray;
+}
+
+/*
+check
+*/
+
+
+
+
+.centercontent01{    
+    display: flex;
+    justify-content: center;
+}
+
+.menu01{   
+    background-color: white;
+}
+.play_content{   
+    /*background-color: white;*/
+    background-image: linear-gradient(135deg, red,orange,yellow,green,blue,indigo,violet);
+    padding: 10px;
+    border-radius: 5px;
+}
+.play_area{    
+    min-height: 100px;
+    max-height: 900px;
+    min-width: 100px;
+    max-width: 900px;
+    background-color: whitesmoke;
+    border-radius: 5px;    
+    display: flex;
+    justify-content: center;
+}
+.square{
+    width: 300px;
+    height: 300px;    
+    display: flex;
+    justify-content: center;
+}
+.table01{
+    display: flex;
+    justify-content: center;
+}
+.table01 table{
+    align-self: center;
+    color: white;
+    background-color: whitesmoke;    
+    border: 10px solid;
+    border-color: black;
+    border-radius: 5px;
+}
+.table01 table tr{
+    width: 90px;
+    height: 90px;
+    border: 1px solid;
+    border-color: black;
+}
+.table01 table tr td{
+    width: 90px;
+    height: 90px;
+    border: 10px solid;
+    border-color: black;
+}
+
+/*
+.diagonalCross2 {
+    background: linear-gradient(to top right, #fff calc(50% - 5px), black , #fff calc(50% + 5px) )
+  }
+.diagonalCross3 {
+    background: linear-gradient(to top left, #fff calc(50% - 5px), black , #fff calc(50% + 5px) )
+  }
+  */

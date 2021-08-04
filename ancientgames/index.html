@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AncientGames</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js"></script>
+    <script>
+        window.onload = function(){
+            window.currentGameState = new GameState();
+        }
+
+    </script>
+</head>
+<body>
+    <header>
+        <br>
+        <marquee behavior="scroll" direction="left">
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: cyan;">💐Ancient Games💐👈🏻💐A Child of Map Technologies💐👉🏻💐Developed By Mugeshbabu ArulMani 👨‍👩‍👦 Priya💐</h1>
+        </marquee>
+        <br>
+    </header>
+    <div class="centercontent01">
+    
+    <div class="menu01">
+        <div style="position: relative;">                
+            <img id="100" class="red03"  src="images/red03.png" style="position:absolute; top:100px; left:20px; z-index:10; max-width: 20px;border-radius: 100%;">
+            <label id="outsidered" style="position:absolute; top:130px; left:60px; z-index:10; max-width: 20px;border-radius: 100%;">3</label>
+            <!--<img id="StartButton" class="bg_class" onClick="startGame()" src="images/bg003.png" style="position:absolute; top:100px; left:140px; z-index:10; max-width: 20px;border-radius: 100%;">-->
+            
+            <button id="button_start_stop" onClick="startGame()" style="position:absolute; top:100px; left:120px; z-index:10;border-radius: 100%; background-color: greenyellow;">Start&Stop</button>
+
+            <img id="300" class="green03" src="images/green03.png" style="position:absolute; top:100px; left:280px; z-index:10; max-width: 20px;border-radius: 100%;">
+            <label id="outsidegreen" style="position:absolute; top:130px; left:260px; z-index:10; max-width: 20px;border-radius: 100%;">3</label>
+        </div>
+    </div>
+    
+    <div class="play_content">
+        <br>
+        <marquee behavior="scroll" direction="right">
+        <h1 style="justify-content: center; display: flex; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: cyan;">💐Ancient Games💐</h1>
+        </marquee>
+        <br>
+        <div style="justify-content: center; display: flex;">
+        <br>
+        &nbsp;&nbsp;
+        <h2 style="align-content:flex-start "><button type="radio" style="background-color: red; color: greenyellow;">Player 1</button></h2>
+        &nbsp;&nbsp;
+        <h2 style="align-content:flex-end"><button type="radio" style="background-color: greenyellow; color: red;">Player 2</button></h2>
+        &nbsp;&nbsp;
+        <br>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="play_area">
+            
+            <div class="square">
+                <div style="position: relative;">
+                    <img onclick="ProcessUserInput(this)" id="0" class="green03" src="images/bg003.png" style="position:absolute; top:30px; left:0px; z-index:10; max-width: 20px;border-radius: 100%;">
+                    <img onclick="ProcessUserInput(this)" id="1" class="green03" src="images/bg003.png" style="position:absolute; top:30px; left:114px; z-index:10;  max-width: 20px;border-radius: 100%;">
+                    <img onclick="ProcessUserInput(this)" id="2" class="green03" src="images/bg003.png" style="position:absolute; top:30px; left:226px; z-index:10; max-width: 20px;border-radius: 100%;">
+                    <img onclick="ProcessUserInput(this)" id="3" class="green03" src="images/bg003.png" style="position:absolute; top:139px; left:0px; z-index:10; max-width: 20px;border-radius: 100%;">
+                    <img onclick="ProcessUserInput(this)" id="4" class="green03" src="images/bg003.png" style="position:absolute; top:139px; left:114px; z-index:10; max-width: 20px;border-radius: 100%;">
+                    <img onclick="ProcessUserInput(this)" id="5" class="green03" src="images/bg003.png" style="position:absolute; top:139px; left:226px; z-index:10; max-width: 20px;border-radius: 100%;">
+                    <img onclick="ProcessUserInput(this)" id="6" class="green03" src="images/bg003.png" style="position:absolute; top:254px; left:0px; z-index:10; max-width: 20px;border-radius: 100%;">
+                    <img onclick="ProcessUserInput(this)" id="7" class="green03" src="images/bg003.png" style="position:absolute; top:254px; left:114px; z-index:10; max-width: 20px;border-radius: 100%;">
+                    <img onclick="ProcessUserInput(this)" id="8" class="green03" src="images/bg003.png" style="position:absolute; top:254px; left:226px; z-index:10; max-width: 20px;border-radius: 100%;">
+                   </div>
+                <div class="table01">
+                    <table>
+                        <tr>
+                            <td class="diagonalCross3" id="a01"></td>
+                            <td class="diagonalCross2"></td>
+                        </tr>
+                        <tr>
+                            <td class="diagonalCross2"></td>
+                            <td class="diagonalCross3"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <marquee behavior="scroll" direction="right">
+        <h1 id="status" style="justify-content: center; display: flex; color: whitesmoke;">Welcome :)</h1>
+        </marquee>
+        <br>
+    </div>
+    </div>
+    <footer>
+        <br>
+        <marquee behavior="scroll" direction="left">
+        <h1 style="justify-content: center; display: flex; color: yellow;">💐Thanks for playing :)💐✨💐Game will be Updated Soon💐</h1>
+        </marquee>
+        <br>
+    </footer>
+</body>
+</html>
