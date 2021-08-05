@@ -2,8 +2,6 @@ var start = 0;
 var root = location.protocol + '//' + location.host+ location.pathname;
 if(location.pathname==='/'){
     var root = location.protocol + '//' + location.host;
-}else{
-    var root = location.protocol + '//' + location.host+ location.pathname;
 }
 
 function startGame(){
