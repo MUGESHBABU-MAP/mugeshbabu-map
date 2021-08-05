@@ -1,8 +1,5 @@
 var start = 0;
 var root = location.protocol + '//' + location.host+ location.pathname;
-if(location.pathname==='/'){
-    var root = location.protocol + '//' + location.host;
-}
 
 function startGame(){
     var button_color = document.getElementById("button_start_stop");
