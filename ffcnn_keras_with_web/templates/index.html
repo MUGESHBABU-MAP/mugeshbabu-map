@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title> Image Denoiser </title>
+      <link rel="shortcut icon" type="image/jpg" href="mugeshbabu.jpeg">
+      <link rel="shortcut icon" type="image/jpg" href="{{ url_for('static',filename='styles/mugeshbabu.jpeg') }}">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+
+  </head>
+    <body>
+    <h1/><h1/><h1/><h1/><h1/><h1/>
+         <div class="container">
+             <div class="row">
+                <div class="col text-center">
+                    <h1/><h1/><h1/><h1/>
+                    <h1>Welcome to Image World</h1>
+                    <h5>Having a noisy image - We help you :)</h5>
+                </div>
+            </div>
+            <div class="row align-items-end">
+                <div class="col text-center">
+                    <img height="150" width="150" src="/{{mySampleX}}" class="img-thumbnail" />
+                    <h1>{{ myX }}</h1>
+                </div>
+                <div class="col text-center">
+                    <img height="150" width="150" src="/{{mySampleZ}}" class="img-thumbnail" />
+                    <h1>{{ myZ }}</h1>
+                </div>
+                <div class="col text-center">
+                    <img height="150" width="150" src="/{{mySampleY}}" class="img-thumbnail" />
+                    <h1>{{ myY }}</h1>
+                </div>
+                <h1/>
+                <div class="row align-items-end">
+                    <div class="col text-center">
+                        <h1/><h1/>
+                        <h4>Our Sincere Thanks to, Our Project Guide and Department Of Electronics and Communication Department</h4>
+                     </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col text-center">
+                    <h4>Upload new File</h4>
+                    <form action="/" method=post enctype="multipart/form-data">
+                        <input type="file" name="file" />
+                        <input type="submit" value="Upload" />
+                    </form>
+                </div> 
+            </div>
+            {% for message in get_flashed_messages() %}    
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {% endfor %}
+            <hr/>
+             <h1>Take your Output Image :)</h1>
+             <hr/>
+            <div class="row">
+            {% if results is defined %}
+                {% for i in range(len-1,-1,-1) %}
+                
+                    {{ results[i]|safe }}
+               
+                {% endfor %}
+            {% endif %}
+                <div class="col text-center">
+                <h6>Download By Right Click & Save Image</h6>
+                    </div>
+            </div>
+             <div class="row align-items-end">
+                <div class="col text-center">
+                    <img height="150" width="150" src="https://www.sonatech.ac.in/images/logo.png" class="img-thumbnail" />
+                    <h1>Student Project @ Sona College Of Technology</h1>
+                    <h5>Learning is a Clebration!</h5>
+                </div>
+             </div>
+             <div class="col text-center">
+             <h2> -: Thank you :- Welcome Back :-</h2>
+             </div>
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
