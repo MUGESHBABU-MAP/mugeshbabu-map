@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--  <meta http-equiv="refresh" content="30" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sona Security Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="text/stylesheet" href="min.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
+    <script src="app.js"></script>
+    <script src="e.js"></script>
+    <script src="security.js"></script>
+</head>
+<body>
+    <div>
+        <div id="home01" style="text-align: center;">
+            <h1>Sona Security Project</h1>
+            <div class="homet03">
+                <table>
+                    <tr>
+                        <th>
+                        <h2 style="min-width: 200px;">Location 01</h2>
+                        </th>
+                        <th>
+                        <h2 style="min-width: 200px;">Location 01</h2>
+                        </th>
+                        <th>
+                        <h2 style="min-width: 200px;">Location 02</h2>
+                        </th>
+                        <th>
+                        <h2 style="min-width: 200px;">Location 02</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Latitude</h4>
+                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" width="device-width" height="300"></iframe>
+                        </td>
+                        <td>
+                            <h4>Longitude</h4>
+                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" width="device-width" height="300">
+                        </iframe>
+                        </td>
+                        <td>
+                            <h4>Latitude</h4>
+                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                        </iframe>
+                        </td>
+                        <td>
+                            <h4>Longitude</h4>
+                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                        </iframe>
+                        </td>
+                    </tr>
+                </table>                               
+            </div>
+            <div class="homet03">
+                <table>
+                    <tr>
+                        <th>
+                        <h2 style="min-width: 200px;">Location 03</h2>
+                        </th>
+                        <th>
+                        <h2 style="min-width: 200px;">Location 03</h2>
+                        </th>
+                        <th>
+                        <h2 style="min-width: 200px;">Location 04</h2>
+                        </th>
+                        <th>
+                        <h2 style="min-width: 200px;">Location 04</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Latitude</h4>
+                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                        </iframe>
+                        </td>
+                        <td>
+                            <h4>Longitude</h4>
+                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                        </iframe>
+                        </td>
+                        <td>
+                            <h4>Latitude</h4>
+                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                        </iframe>
+                        </td>
+                        <td>
+                            <h4>Longitude</h4>
+                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                        </iframe>
+                        </td>
+                    </tr>
+                </table>                               
+            </div>
+            
+            <button id="myBtn02" onclick="myFunctiondisp01()">Load Page</button>
+            <div id="securitypage" style="display: none;">
+                <div class="home01"  style="min-height:760px;">               
+                
+                    <div id="sonasecuritypage">
+                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_5IHYyQme0FcIXkKpj-fg3NByHxiXymXDnL4tpJb-OkNqev-_2xQr_IFNL6mHD66C0KBlGNJcXeeZ/pubhtml" width="2000" height="800" overflow="scroll"></iframe>
+                    </div>
+                    <iframe src="https://docs.google.com/spreadsheets/d/14ptTJnPg_sKUud0elSQCrzWde4wPsfMVyPGIeFZmJas/edit#gid=0" style="display: none;"></iframe>               
+    
+                </div>
+            </div>
+            <div class="homet01"  style="min-height:380px">
+                
+                <div id="json" class="json">json here : Check Your Internet Connection</div>
+                <iframe src="https://docs.google.com/spreadsheets/d/17hqp3raEZjjF10x66R_gVQp_Rf9L8Z7BP382ERl862g/edit#gid=0" style="display: none;"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="myBtn">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">/\</button>
+    </div>
+</body>
+</html>

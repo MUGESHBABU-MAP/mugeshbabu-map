@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta http-equiv="refresh" content="30" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sona Security Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="text/stylesheet" href="min.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
+    <script src="app.js"></script>
+    <script src="e.js"></script>
+</head>
+<body>
+    <div>
+        <div id="home01" style="text-align: center;">
+            <h1>Sona Security Project</h1>
+            <div class="home01">
+                <table>
+                    <tr>
+                        <h1 style="min-width: 200px;">Location 01</h1>
+                    </tr>
+                    <tr>
+                        <iframe src="https://thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                    </iframe>
+                    </tr><tr>
+                        <iframe src="https://thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                    </iframe>
+                    </tr>
+                    <tr>
+                        <h1 style="min-width: 200px;">Location 02</h1>
+                    </tr>
+                    <tr>
+                        <iframe src="https://thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                    </iframe>
+                    </tr><tr>
+                        <iframe src="https://thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                    </iframe>
+                    </tr>
+                    <br>
+                    <tr>
+                        <h1 style="min-width: 200px;">Location 03</h1>
+                    </tr>
+                    <tr>
+                        <iframe src="https://thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                    </iframe>
+                    </tr><tr>
+                        <iframe src="https://thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                    </iframe>
+                    </tr>
+                    <tr>
+                        <h1 style="min-width: 200px;">Location 04</h1>
+                    </tr>
+                    <tr>
+                        <iframe src="https://thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                    </iframe>
+                    </tr><tr>
+                        <iframe src="https://thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                    </iframe>
+                    </tr>
+                </table>
+                
+
+                
+
+            </div>
+            <div class="home01"  style="min-height:760px">
+                
+                
+                <div id="sonasecuritypage">
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_5IHYyQme0FcIXkKpj-fg3NByHxiXymXDnL4tpJb-OkNqev-_2xQr_IFNL6mHD66C0KBlGNJcXeeZ/pubhtml" width="2000" height="800"></iframe>
+                </div>
+
+                
+
+            </div>
+        </div>
+        <div class="container my-5">
+
+            <div class="row">
+          
+              <div class="col-md-7 mb-4 mb-md-0">
+          
+                <div class="text-center mb-4">
+                  <a class="btn btn-primary mb-4" target="_blank" href="https://docs.google.com/spreadsheets/d/1ZIptCxioF5KBj0T76F3lILNvne35EhLhFrdrNccOC8A/edit?usp=sharing" role="button"
+                     >Click to see the source sheet</a
+                    >
+          
+                  <p>The data in the table below was imported from Google Spreadsheet. Thanks to this, they can be edited by editing this sheet, and the changes will be reflected in the html table.</p>
+          
+                </div>
+          
+                <!-- Table -->
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Age</th>
+                      <th>Email</th>
+                    </tr>
+                  </thead>
+                  <tbody id="demo"></tbody>
+                </table>
+          
+              </div>
+          
+              <div class="col-md-5 mb-4 mb-md-0 text-center">
+          
+                <p class="font-weight-bold"><strong>Watch the tutorial </strong></p>
+          
+                <div class="embed-responsive embed-responsive-16by9 z-depth-2 rounded">
+                  <iframe
+                    class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/iJdg9vGCnX4"
+                    title="YouTube video"
+                    allowfullscreen
+                    >
+                  </iframe>
+                </div>
+          
+              </div>
+          
+            </div>
+          
+            <hr class="mt-5">
+          
+            <p>Built with <a target="_blank" href="https://mdbootstrap.com/docs/standard/">Material Design for Bootstrap</a> - free and powerful Bootstrap UI KIT</p>
+          
+            <a class="btn btn-primary me-2" href="https://mdbootstrap.com/docs/standard/getting-started/installation/" target="_blank" role="button">Download MDB UI KIT <i class="fas fa-download"></i></a>
+            <a class="btn btn-danger me-2" target="_blank" href="https://mdbootstrap.com/docs/standard/" role="button">Learn more</a>
+            <a class="btn btn-success me-2" target="_blank" href="https://mdbootstrap.com/docs/standard/getting-started/" role="button">Tutorials</a>
+            <a class="btn btn-dark me-2" target="_blank" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button">GitHub <i class="fab fa-github ms-2"></i></a>
+          
+            <hr class="mb-5"/>
+          
+            <div class="text-center">
+              <p class="font-weight-bold">
+                Download Free MDB UI KIT to find more useful solutions for web
+                development
+              </p>
+          
+              <a
+                 class="btn btn-danger btn-lg"
+                 target="_blank"
+                 href="https://mdbootstrap.com/docs/standard/getting-started/installation/"
+                 role="button"
+                 >Download free MDB UI KIT<i class="fas fa-download ms-2"></i
+                ></a>
+            </div>
+          
+          </div>
+    </div>
+    <div class="myBtn">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">/\</button>
+    </div>
+</body>
+</html>
