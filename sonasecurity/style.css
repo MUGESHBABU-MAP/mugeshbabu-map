@@ -3,27 +3,31 @@ html {
   }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: honeydew;
+    background-color: #ddd;
+    background-image: url('images/bg001.jpg');
+    background-size: cover;
+    scroll-behavior: smooth;
 }
 .home01{
-    background-image: url('images/bg01.jpg');
+    background-image: url('images/bg001.jpg');
     background-size: cover;
     display: flex;
 }
 #home01{
-    background-color: aliceblue;
+    background-color: #fff;
     background-size: cover;
     overflow: hidden;
     border-style: dotted;
-    border-color: #04AA6D;
+    border-color: blue;
 }
 .homet01{
-    background-color: aliceblue;
+    /*background-color: #fff;*/
+    background-image: url('images/bg002.jpg');
     background-size: cover;
     overflow: scroll;
 }
 .homet03{
-    background-color: aliceblue;
+    background-image: url('images/bg002.jpg');
     background-size: cover;
     display: flex;
     overflow: scroll;
@@ -52,7 +56,7 @@ border: 1px solid #ddd;
 padding: 8px;
 }
 h1{
-    color: #04AA6D;
+    color: blue;
     font-family: 'Times New Roman', 'Times', 'serif';
     font-weight: bold;
     border-bottom-style: dotted;
@@ -67,10 +71,10 @@ h1{
 }
 
 h2{
-    color: #04AA6D;
+    color: blue;
 }
 h4{
-    color: #059481;
+    color: blue;
     font-family: 'Times New Roman', 'Times', 'serif';
 }
 
@@ -97,7 +101,7 @@ h4{
 padding-top: 12px;
 padding-bottom: 12px;
 text-align: left;
-background-color: #04AA6D;
+background-color: blue;
 color: white;
 }
 
@@ -156,12 +160,12 @@ color: white;
 
 /* unvisited link */
 a:link {
-color: greenyellow;
+color: blue;
 }
 
 /* visited link */
 a:visited {
-color: rgb(0, 255, 0);
+color: lightblue;
 }
 
 /* mouse over link */
@@ -175,12 +179,12 @@ color: blue;
 }
 /* unvisited link */
 #nav a:link {
-color: greenyellow;
+color:blue;
 }
 
 /* visited link */
 #nav a:visited {
-color: rgb(0, 255, 0);
+color: lightblue;
 }
 
 /* mouse over link */
@@ -408,7 +412,7 @@ background-color: #555;
     width: 50%;
     padding: 2%;
     min-height: 150px;
-    background-color: aliceblue;
+    background-color: #fff;
 }
 
 

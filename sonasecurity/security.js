@@ -4,13 +4,16 @@ function myFunctiondisp01() {
     if (xpage.style.display === "none") {
       xpage.style.display = "block";
       xbutton.innerHTML = "Hide page";
+      window.scrollTo(0,5000);
     } else {
+      window.scrollTo(0,-5000);
       xpage.style.display = "none";
       xbutton.innerHTML = "Load page";
+      
     }
   }
 
-
+var z=1;
 var id = '17hqp3raEZjjF10x66R_gVQp_Rf9L8Z7BP382ERl862g';
 var gid = '0';
 var url = 'https://docs.google.com/spreadsheets/d/'+id+'/gviz/tq?tqx=out:json&tq&gid='+gid;
@@ -28,7 +31,8 @@ function myItems(jsonString){
     ligne.c.forEach(cellule => {
         try{var valeur = cellule.f ? cellule.f : cellule.v}
         catch(e){var valeur = ''}
-        table += '<td>' + valeur + '</td>'
+        table += '<td id="hi'+z+'">' + valeur + '</td>'
+        z++;
         }
     )
     table += '</tr>'
@@ -37,3 +41,4 @@ function myItems(jsonString){
     table += '</table>'
     return table
 }           
+

@@ -3,20 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--  <meta http-equiv="refresh" content="30" /> -->
+    <meta http-equiv="refresh" content="60"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sona Security Project</title>
     <link rel="stylesheet" href="style.css">
     <link rel="text/stylesheet" href="min.css">
     <link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
-    <script src="app.js"></script>
-    <script src="e.js"></script>
-    <script src="security.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="security.js" type="text/javascript"></script>
+    <script src="datacheck.js" type="text/javascript"></script>
 </head>
 <body>
-    <div>
+    <div id="bg001">
+        <div class="navbar" id="nav"><br>
+            <ul>                
+                <li>
+                    <a href="javascript:void(0);" class="icon" onClick="myFunction1()">
+                        <i class="fa fa-bars" title="Thanks For Visiting">:)</i>
+                    </a>
+                    <style>
+                        .navbar ul li a i:hover{
+                            color:#fff;
+                        }
+                    </style>
+                </li>
+            </ul>
+        </div>
         <div id="home01" style="text-align: center;">
-            <h1>Sona Security Project</h1>
+            <h1 id="entry-title">Sona Security Project<br><p></p></h1>
+            <div class="homet01"  style="min-height:380px">
+                
+                <div id="json" class="json">json here : Check Your Internet Connection</div>
+                <iframe src="https://docs.google.com/spreadsheets/d/17hqp3raEZjjF10x66R_gVQp_Rf9L8Z7BP382ERl862g/edit#gid=0" style="display: none;">
+                </iframe>
+            </div>
             <div class="homet03">
                 <table>
                     <tr>
@@ -45,12 +65,12 @@
                         </td>
                         <td>
                             <h4>Latitude</h4>
-                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                            <iframe src="https://thingspeak.com/channels/1493145/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" width="device-width" height="300">
                         </iframe>
                         </td>
                         <td>
                             <h4>Longitude</h4>
-                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                            <iframe src="https://thingspeak.com/channels/1493145/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" width="device-width" height="300">
                         </iframe>
                         </td>
                     </tr>
@@ -75,22 +95,22 @@
                     <tr>
                         <td>
                             <h4>Latitude</h4>
-                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                            <iframe src="https://thingspeak.com/channels/1493146/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" width="device-width" height="300">
                         </iframe>
                         </td>
                         <td>
                             <h4>Longitude</h4>
-                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                            <iframe src="https://thingspeak.com/channels/1493146/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" width="device-width" height="300">
                         </iframe>
                         </td>
                         <td>
                             <h4>Latitude</h4>
-                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                            <iframe src="https://thingspeak.com/channels/1493147/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" width="device-width" height="300">
                         </iframe>
                         </td>
                         <td>
                             <h4>Longitude</h4>
-                            <iframe src="https://api.thingspeak.com/channels/1485120/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line" width="device-width" height="300">
+                            <iframe src="https://thingspeak.com/channels/1493147/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" width="device-width" height="300">
                         </iframe>
                         </td>
                     </tr>
@@ -108,11 +128,7 @@
     
                 </div>
             </div>
-            <div class="homet01"  style="min-height:380px">
-                
-                <div id="json" class="json">json here : Check Your Internet Connection</div>
-                <iframe src="https://docs.google.com/spreadsheets/d/17hqp3raEZjjF10x66R_gVQp_Rf9L8Z7BP382ERl862g/edit#gid=0" style="display: none;"></iframe>
-            </div>
+            
         </div>
     </div>
     <div class="myBtn">
