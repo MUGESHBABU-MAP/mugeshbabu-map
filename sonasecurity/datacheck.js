@@ -51,7 +51,7 @@ function myFunction1(){
     //alert(l3time);
     var l4time = document.getElementById("hi80").innerHTML;
     //alert(l4time); 
-    var systime = new Date(new Date().getTime() - (5*60+30)*60000);
+    var systime = new Date(new Date().getTime() - (5*60-30)*60000);
     var isotime = systime.toISOString();
     //alert(systime.toISOString());
     var s0 = isotime.toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function(){
         //alert(l3time);
         var l4time = document.getElementById("hi80").innerHTML;
         //alert(l4time); 
-        var systime = new Date(new Date().getTime() - (5*60+30)*60000);
+        var systime = new Date(new Date().getTime() - (5*60-30)*60000);
         var isotime = systime.toISOString();
         //alert(systime.toISOString());
         var s0 = isotime.toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
