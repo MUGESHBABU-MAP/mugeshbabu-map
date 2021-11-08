@@ -50,6 +50,27 @@ function myFunction1(){
     var l3time = document.getElementById("hi54").innerHTML;
     //alert(l3time);
     var l4time = document.getElementById("hi80").innerHTML;
+    //alert(l4time);
+    l1time = new Date(l1time );   
+    l1time .setHours(l1time .getHours() - 5); 
+    l1time .setMinutes(l1time .getMinutes()-30);
+    l1time  = l1time.toISOString();
+
+    l2time = new Date(l2time);   
+    l2time.setHours(l2time.getHours() - 5); 
+    l2time.setMinutes(l2time.getMinutes()-30);
+    l2time = l2time.toISOString();
+
+    l3time = new Date(l3time);   
+    l3time.setHours(l3time.getHours() - 5); 
+    l3time.setMinutes(l3time.getMinutes()-30);
+    l3time = l3time.toISOString();
+
+    l4time = new Date(l4time);   
+    l4time.setHours(l4time.getHours() - 5); 
+    l4time.setMinutes(l4time.getMinutes()-30);
+    l4time = l4time.toISOString();
+    
     //alert(l4time); 
     var systime = new Date(new Date().getTime() - (6*60+30)*60000);
     var isotime = systime.toISOString();
@@ -158,6 +179,26 @@ document.addEventListener("DOMContentLoaded", function(){
         var l3time = document.getElementById("hi54").innerHTML;
         //alert(l3time);
         var l4time = document.getElementById("hi80").innerHTML;
+        //alert(l4time); 
+        l1time = new Date(l1time );   
+        l1time .setHours(l1time .getHours() - 5); 
+        l1time .setMinutes(l1time .getMinutes()-30);
+        l1time  = l1time.toISOString();
+
+        l2time = new Date(l2time);   
+        l2time.setHours(l2time.getHours() - 5); 
+        l2time.setMinutes(l2time.getMinutes()-30);
+        l2time = l2time.toISOString();
+
+        l3time = new Date(l3time);   
+        l3time.setHours(l3time.getHours() - 5); 
+        l3time.setMinutes(l3time.getMinutes()-30);
+        l3time = l3time.toISOString();
+
+        l4time = new Date(l4time);   
+        l4time.setHours(l4time.getHours() - 5); 
+        l4time.setMinutes(l4time.getMinutes()-30);
+        l4time = l4time.toISOString();
         //alert(l4time); 
         var systime = new Date(new Date().getTime() - (6*60+30)*60000);
         var isotime = systime.toISOString();
